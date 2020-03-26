@@ -22,6 +22,12 @@
 
         <dependency>
             <groupId>org.openjfx</groupId>
+            <artifactId>javafx-base</artifactId>
+            <version>11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
             <version>11</version>
             <classifier>win</classifier>
@@ -78,6 +84,15 @@
                 </executions>
                 <configuration>
                     <mainClass>com.almasb.test.FXApp</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.4</version>
+                <configuration>
+                    <mainClass>JavaFxApp</mainClass>
                 </configuration>
             </plugin>
 
